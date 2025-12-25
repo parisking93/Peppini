@@ -69,7 +69,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--schema", default=".agent/schemas/review.schema.json")
     ap.add_argument("--out", default=".agent/tmp/impl_review.json")
-    ap.add_argument("--model", default="gpt-5.2-codex-max")
+    ap.add_argument("--model", default="gpt-5.1-codex-max")
     ap.add_argument("--testlog", default=".agent/tmp/test_output.txt")
     ap.add_argument("--codex-cmd", default="codex")
     args = ap.parse_args()
