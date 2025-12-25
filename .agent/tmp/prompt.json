@@ -1,0 +1,19 @@
+{
+    "expanded_prompt": "Implement a plotting function in `utils/plotting.py` that visualizes training losses. Integrate this function into `RunTrainingGpu.py` and `RunTrainingGpuUp.py` to show loss trends at the end of training. The plot should highlight the average loss in red and specific loss heads in other colors. Input is a list of metric objects collected during training steps.",
+    "difficulty": "medium",
+    "antigravity_model_hint": "Claude Sonnet 3.5",
+    "codex_review_model": "gpt-4o",
+    "acceptance_criteria": [
+        "Function `plot_training_losses` exists in `utils/plotting.py`",
+        "Function is imported and called in both training scripts",
+        "Total loss is plotted in red",
+        "Other loss components are plotted in distinguishable colors",
+        "The plot is saved as an image file"
+    ],
+    "suggested_commands": [
+        "pip install matplotlib"
+    ],
+    "notes": [
+        "Depends on matplotlib"
+    ]
+}

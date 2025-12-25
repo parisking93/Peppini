@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "expanded_prompt": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] },
+    "antigravity_model_hint": { "type": "string" },
+    "codex_review_model": { "type": "string" },
+    "acceptance_criteria": { "type": "array", "items": { "type": "string" } },
+    "suggested_commands": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": [
+    "expanded_prompt",
+    "difficulty",
+    "antigravity_model_hint",
+    "codex_review_model",
+    "acceptance_criteria",
+    "suggested_commands",
+    "notes"
+  ],
+  "additionalProperties": false
+}
